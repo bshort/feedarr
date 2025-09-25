@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Notifications Feed]]></title>
+        <description><![CDATA[System notifications and alerts]]></description>
+        <link>http://localhost:3001</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Thu, 25 Sep 2025 04:05:00 GMT</lastBuildDate>
+        <atom:link href="http://localhost:3001/rss/notification" rel="self" type="application/rss+xml"/>
+        <author><![CDATA[Feedarr]]></author>
+        <pubDate>Thu, 25 Sep 2025 04:05:00 GMT</pubDate>
+        <copyright><![CDATA[2025]]></copyright>
+        <language><![CDATA[en]]></language>
+        <managingEditor><![CDATA[Feedarr]]></managingEditor>
+        <webMaster><![CDATA[Feedarr]]></webMaster>
+        <ttl>10</ttl>
+        <category><![CDATA[Movies]]></category>
+        <category><![CDATA[Media]]></category>
+        <item>
+            <title><![CDATA[Discord]]></title>
+            <description><![CDATA[<p><strong>Implementation:</strong> Discord</p>
+<p><strong>Configuration Fields:</strong> 7 fields configured</p>
+<p><strong>Contract:</strong> DiscordSettings</p>]]></description>
+            <link>#</link>
+            <guid isPermaLink="false">notification-1</guid>
+            <category><![CDATA[Notification]]></category>
+            <category><![CDATA[Discord]]></category>
+            <dc:creator><![CDATA[Feedarr]]></dc:creator>
+            <pubDate>Thu, 25 Sep 2025 04:05:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[ntfy]]></title>
+            <description><![CDATA[<p><strong>Implementation:</strong> ntfy.sh</p>
+<p><strong>Configuration Fields:</strong> 8 fields configured</p>
+<p><strong>Contract:</strong> NtfySettings</p>]]></description>
+            <link>#</link>
+            <guid isPermaLink="false">notification-3</guid>
+            <category><![CDATA[Notification]]></category>
+            <category><![CDATA[ntfy.sh]]></category>
+            <dc:creator><![CDATA[Feedarr]]></dc:creator>
+            <pubDate>Thu, 25 Sep 2025 04:05:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Plex Media Server]]></title>
+            <description><![CDATA[<p><strong>Implementation:</strong> Plex Media Server</p>
+<p><strong>Configuration Fields:</strong> 10 fields configured</p>
+<p><strong>Contract:</strong> PlexServerSettings</p>]]></description>
+            <link>#</link>
+            <guid isPermaLink="false">notification-2</guid>
+            <category><![CDATA[Notification]]></category>
+            <category><![CDATA[Plex Media Server]]></category>
+            <dc:creator><![CDATA[Feedarr]]></dc:creator>
+            <pubDate>Thu, 25 Sep 2025 04:05:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

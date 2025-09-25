@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Calendar Feed]]></title>
+        <description><![CDATA[Upcoming movies from calendar]]></description>
+        <link>http://localhost:3001</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Thu, 25 Sep 2025 04:05:00 GMT</lastBuildDate>
+        <atom:link href="http://localhost:3001/rss/calendar" rel="self" type="application/rss+xml"/>
+        <author><![CDATA[Feedarr]]></author>
+        <pubDate>Thu, 25 Sep 2025 04:05:00 GMT</pubDate>
+        <copyright><![CDATA[2025]]></copyright>
+        <language><![CDATA[en]]></language>
+        <managingEditor><![CDATA[Feedarr]]></managingEditor>
+        <webMaster><![CDATA[Feedarr]]></webMaster>
+        <ttl>10</ttl>
+        <category><![CDATA[Movies]]></category>
+        <category><![CDATA[Media]]></category>
+        <item>
+            <title><![CDATA[The Fantastic 4: First Steps]]></title>
+            <description><![CDATA[<p><strong>Overview:</strong> Against the vibrant backdrop of a 1960s-inspired, retro-futuristic world, Marvel&#39;s First Family is forced to balance their roles as heroes with the strength of their family bond, while defending Earth from a ravenous space god called Galactus and his enigmatic Herald, Silver Surfer.</p>
+<p><strong>Year:</strong> 2025</p>
+<p><strong>Status:</strong> released</p>
+<p><strong>In Cinemas:</strong> 7/21/2025</p>
+<p><strong>Digital Release:</strong> 9/21/2025</p>
+<p><strong>Physical Release:</strong> 10/13/2025</p>
+<p><strong>Genres:</strong> Science Fiction, Adventure</p>]]></description>
+            <link>https://www.imdb.com/title/tt10676052</link>
+            <guid isPermaLink="false">calendar-288</guid>
+            <category><![CDATA[Movie]]></category>
+            <category><![CDATA[released]]></category>
+            <category><![CDATA[Science Fiction]]></category>
+            <category><![CDATA[Adventure]]></category>
+            <dc:creator><![CDATA[Feedarr]]></dc:creator>
+            <pubDate>Mon, 22 Sep 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Weapons]]></title>
+            <description><![CDATA[<p><strong>Overview:</strong> When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.</p>
+<p><strong>Year:</strong> 2025</p>
+<p><strong>Status:</strong> released</p>
+<p><strong>In Cinemas:</strong> 8/5/2025</p>
+<p><strong>Digital Release:</strong> 9/7/2025</p>
+<p><strong>Physical Release:</strong> 10/13/2025</p>
+<p><strong>Genres:</strong> Horror, Mystery</p>]]></description>
+            <link>https://www.imdb.com/title/tt26581740</link>
+            <guid isPermaLink="false">calendar-2038</guid>
+            <category><![CDATA[Movie]]></category>
+            <category><![CDATA[released]]></category>
+            <category><![CDATA[Horror]]></category>
+            <category><![CDATA[Mystery]]></category>
+            <dc:creator><![CDATA[Feedarr]]></dc:creator>
+            <pubDate>Mon, 08 Sep 2025 00:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

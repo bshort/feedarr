@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  feedarr:
+    build: .
+    container_name: feedarr
+    restart: unless-stopped
+    ports:
+      - "${PORT:-3000}:3000"
+    environment:
+      # Server Configuration
+      - NODE_ENV=production
+      - PORT=3000
+
+      # Target Server Configuration (Radarr/Sonarr/etc)
+      - SERVER_URL=${SERVER_URL:-http://localhost}
+      - SERVER_PORT=${SERVER_PORT:-7878}
+      - API_KEY=${API_KEY}
+      - API_BASE_URL=${API_BASE_URL:-/api/v3}
+
+      # RSS Configuration
+      - FETCH_FREQUENCY=${FETCH_FREQUENCY:-300000}
+      - RSS_CACHE_TTL=${RSS_CACHE_TTL:-600000}
+
+      # Database Configuration
+      - DATABASE_PATH=/app/data/feedarr.db
+      - DATABASE_TYPE=sqlite3
+    volumes:
+      # Persist database and RSS feeds
+      - feedarr_data:/app/data
+      - feedarr_feeds:/app/feeds
+      # Optional: Mount config file
+      # - ./config:/app/config:ro
+    networks:
+      - feedarr_network
+    healthcheck:
+      test: ["CMD", "node", "-e", "const http = require('http'); http.get('http://localhost:3000/health', (res) => { process.exit(res.statusCode === 200 ? 0 : 1); }).on('error', () => process.exit(1));"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    labels:
+      # Traefik labels (if using Traefik as reverse proxy)
+      - "traefik.enable=true"
+      - "traefik.http.routers.feedarr.rule=Host(`feedarr.local`)"
+      - "traefik.http.services.feedarr.loadbalancer.server.port=3000"
+      # General labels
+      - "com.feedarr.description=RSS feed generator for media server APIs"
+      - "com.feedarr.version=1.0.0"
+
+networks:
+  feedarr_network:
+    driver: bridge
+
+volumes:
+  feedarr_data:
+    driver: local
+  feedarr_feeds:
+    driver: local
